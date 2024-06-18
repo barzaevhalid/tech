@@ -7,9 +7,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Inter", serif;
-    height: 2000px;
 
 
+}
+
+.main {
+    display: flex;
 }
 
 .container {
@@ -240,4 +243,166 @@ body {
 .liabilities {
     background: #ecfdf3;
     color: #1d2939;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 24px 32px;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 112%;
+    text-align: center;
+    color: #4d71cf;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: 500;
+    font-size: 37px;
+    color: #1b1b1b;
+}
+
+.light {
+    color: #007bff;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-img {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    position: relative;
+}
+
+.menu ul li img {
+    width: 24px;
+}
+
+
+.menu-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.money {
+    color: #667085;
+}
+
+
+.menu .active {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+.sidebar-arrow {
+    position: absolute;
+    right: 10px;
+}
+
+.menu .submenu {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+
+}
+
+.menu .submenu li {
+
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.submenu-item {
+    margin-top: 15px;
+}
+
+.settings {
+    margin-top: 200px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.balance {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px 16px;
+    border-radius: 4px;
+}
+
+.balance a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.user-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    display: flex;
+    background: #eef4ff;
+    justify-content: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-avatar img {
+    width: 24px;
+}
+
+.user-details {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+
+.break {
+    margin-top: 16px;
+    color: #3538cd;
 }
