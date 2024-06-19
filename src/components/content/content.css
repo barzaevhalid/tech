@@ -1,0 +1,164 @@
+
+.main {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 32px;
+}
+
+.asset-tracker, .capital-tracker {
+    width: 460px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.asset-tracker {
+    height: 857px;
+}
+
+.asset-tracker-header {
+    padding: 24px;
+
+}
+
+.asset-tracker-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.total-amount {
+    font-weight: 700;
+    font-size: 24px;
+    color: #05603a;
+}
+
+.progress-bar {
+    border: 1px solid #6ce9a6;
+    border-radius: 8px;
+    height: 32px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #d1fadf;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    border-top: 1px solid #d0d5dd;
+    font-weight: 600;
+    font-size: 16px;
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+.category-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.category-title {
+}
+
+.subcategory-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px 12px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    border-top: 1px solid #eaecf0;
+}
+
+.subcategory .arrow img {
+    width: 14px;
+}
+
+.subcategory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #667085;
+    padding: 12px 24px 12px 56px;
+    border-top: 1px solid #eaecf0;
+}
+
+.divider {
+    margin-top: 117px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #101828;
+}
+
+/*--------------*/
+.capital-amounts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-amount-red, .total-amount-green {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.total-amount-red {
+    color: #912018;
+}
+
+.total-amount-green {
+    color: #05603a;;
+}
+
+.capital-progress-bar {
+
+}
+
+.capital-progress {
+    display: flex;
+    width: 100%;
+    height: 32px;
+
+}
+
+.progress-red {
+    width: 70%;
+    background-color: #fee4e2;
+    border: 1px solid #fda29b;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.progress-green {
+    width: 30%;
+    background-color: #d1fadf;
+    border: 1px solid #6ce9a6;
+    border-left: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.total, .liabilities {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #912018;
+    background: #fef3f2;
+}
+
+.liabilities {
+    background: #ecfdf3;
+    color: #1d2939;
+}
