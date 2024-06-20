@@ -1,12 +1,17 @@
 import help from "../../assets/help.svg";
 import calendar from "../../assets/calendar.svg";
-import arrow from "../../assets/chevron-up.svg";
+import check from "../../assets/check.svg"
+import arrow from "../../assets/chevron-up.svg"
+import search from "../../assets/search-options.svg"
+import "./header.css"
+
 import {useState} from "react";
 
-import "./header.css"
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
+    const [inputValue, setInputValue] = useState("Юрлица")
+   
     return (
         <header className="header">
             <div className="container">
@@ -29,9 +34,43 @@ const Header = () => {
                         <div><img src={calendar} alt=""/></div>
                         <div>01.10.2023</div>
                     </div>
-                    <div className="legal_person">
-                        <div className="arrow"><img src={arrow} alt=""/></div>
-                        <div>Юрлица</div>
+                    <div className="select-container">
+                        <div className="select-input-wrapper" onClick={() => setIsActive(!isActive)}>
+                            <img className={`header-arrow ${isActive ? "down" : ""}`} src={arrow} alt=""/>
+                            <input className="select-input" type="text" value={inputValue} readOnly={true}/>
+                        </div>
+
+                        <div className={`options ${isActive ? "active" : ""}`}>
+                            <div className="options-input-wrapper">
+                                <img className="options-search" src={search} alt=""/>
+                                <input className="options-input" type="text" placeholder="Поиск по списку"/>
+                            </div>
+                            <ul className="options-inner">
+                                <li className="option">
+                                    <div className="option-title">Юрлица и счета</div>
+                                </li>
+                                <li className="option">
+                                    <div className="option-title">
+                                        <span>ИП Иванов</span>
+                                        <img src={check} alt=""/>
+                                    </div>
+                                    <div className="sub-option-wrapper">
+                                        <div className="sub-option">Сбербанк</div>
+                                        <img src={check} alt=""/>
+                                    </div>
+                                </li>
+                                <li className="option">
+                                    <div className="option-title">
+                                        <span>ООО Ромашка</span>
+                                        <img src={check} alt=""/>
+                                    </div>
+                                    <div className='sub-option-wrapper'>
+                                        <div className="sub-option">Тинькофф</div>
+                                        <img src={check} alt=""/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
